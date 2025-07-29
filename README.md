@@ -39,7 +39,13 @@ npm install
 ```
 
 3. Crea un archivo .env a partir del .env.example
+   
 ```env
 PORT=3000
-DATABASE_URL=postgresql://usuario:password@localhost:5432/authdb
+DB_USER=user
+DB_PASSWORD=password
+DB_HOST=host
+DB_PORT=port
+DB_NAME=dbname
 JWT_SECRET=tu_token_secreto
+```
