@@ -35,7 +35,7 @@ cd auth-api-node
 
 ```bash
 npm install
-
+```
 3. Crea un archivo .env a partir del .env.example
 ```env
 PORT=3000
