@@ -49,3 +49,8 @@ DB_PORT=port
 DB_NAME=dbname
 JWT_SECRET=tu_token_secreto
 ```
+
+4. Documentación Swagger
+```bash
+http://localhost:3000/api/docs
+```
