@@ -30,3 +30,14 @@ Permite:
 ```bash
 git clone https://github.com/tu-usuario/auth-api-node.git
 cd auth-api-node
+
+2. Instala dependencias
+
+```bash
+npm install
+
+3. Crea un archivo .env a partir del .env.example
+```env
+PORT=3000
+DATABASE_URL=postgresql://usuario:password@localhost:5432/authdb
+JWT_SECRET=tu_token_secreto
