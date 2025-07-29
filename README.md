@@ -54,3 +54,21 @@ JWT_SECRET=tu_token_secreto
 ```bash
 http://localhost:3000/api/docs
 ```
+
+📁 Archivos importantes
+.env.example → Variables de entorno requeridas
+database/schema.sql → Script para crear tablas iniciales
+swagger/swagger.yaml → Documentación OpenAPI
+
+🛡️ Seguridad
+Contraseñas encriptadas con bcrypt
+Tokens JWT firmados y con expiración
+Validación estricta de datos de entrada
+Middleware de validación de token (validateToken)
+Middleware de roles (authorizeRole)
+
+📋 Endpoints principales
+POST	/api/auth/register	-> Registro de nuevos usuarios	Pública
+POST	/api/auth/login	-> Login y obtención de JWT	Pública
+GET	/api/profile	-> Obtener perfil del usuario autenticado	JWT
+GET	/api/admin/users	-> Listado de todos los usuarios (admin only)	JWT + rol admin
